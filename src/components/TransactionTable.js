@@ -12,6 +12,7 @@ function TransactionTable({ transactions, deleteTransaction }) {
 
     return (
         <table>
+
             <thread>
                 <tr>
                     <th>Description</th>
@@ -24,24 +25,19 @@ function TransactionTable({ transactions, deleteTransaction }) {
             <tbody>
                 {sortedtransactions.map((transaction) => (
                     <tr key={transaction.id}>
-                        <td>
-                            {transaction.description}
-                        </td>
-                        <td>
-                            {transaction.category}
-                        </td>
-                        <td>
-                            {transaction.amount}
-                        </td>
+                        <td>{transaction.description}</td>
+                        <td>{transaction.category}</td>
+                        <td>{transaction.amount}</td>
                         <td>
                             <button onClick={() => {
-                                if (window.confirm('Are you sure you wish to delete this item?'))
+                                if (window.confirm('Are you sure you want to delete this transaction!?'))
                                     deleteTransaction(transaction.id)
                             }}>Delete</button>
                         </td>
                     </tr>
                 ))}
             </tbody>
+            
         </table>
     );
 }
