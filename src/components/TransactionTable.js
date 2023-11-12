@@ -14,7 +14,7 @@ function TransactionTable({ transactions, deleteTransaction }) {
         <table>
             <thread>
                 <tr>
-                    <th>Description                   </th>
+                    <th>Description</th>
                     <th>
                         Category
                     </th>
