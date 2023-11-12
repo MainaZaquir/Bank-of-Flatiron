@@ -1,14 +1,11 @@
 import React, { useState } from 'react';
 
-
 function TransactionTable({ transactions, deleteTransaction }) {
-    const [sortField, ] = useState(null);
-
+    const [sortField] = useState(null);
     let sortedtransactions = [...transactions];
     if (sortField !== null) {
         sortedtransactions.sort((a, b) => a[sortField].localeCompare(b[sortField]));
     }
-
 
     return (
         <table>
@@ -37,7 +34,7 @@ function TransactionTable({ transactions, deleteTransaction }) {
                     </tr>
                 ))}
             </tbody>
-            
+
         </table>
     );
 }
