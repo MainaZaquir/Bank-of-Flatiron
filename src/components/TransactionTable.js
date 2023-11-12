@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 
 
-function TransactionTable({ trasactions, deleteTransaction }) {
+function TransactionTable({ transactions, deleteTransaction }) {
     const [sortField, setSortField] = useState(null);
 
-    let sortedtransactions = [...trasactions];
+    let sortedtransactions = [...transactions];
     if (sortField !== null) {
         sortedtransactions.sort((a, b) => a[sortField].localeCompare(b[sortField]));
     }

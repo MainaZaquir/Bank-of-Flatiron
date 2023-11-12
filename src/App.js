@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import TransactionTable from './TransactionTable';
-import TransactionForm from './TransactionForm';
-import NavBar from './Navbar';
+import TransactionTable from './components/TransactionTable';
+import TransactionForm from './components/TransactionForm';
+import NavBar from './components/NavBar';
 
 function App() {
   const [transactions, setTransactions] = useState([]);
@@ -10,7 +10,10 @@ function App() {
   useEffect(() => {
     fetch(' http://localhost:3000/transactions')
       .then((Response) => Response.json())
-      .then((data) => setTransactions(data));
+      .then((data) => {
+        console.log(data);
+        setTransactions(data);
+      });
   }, []);
 
   const addTransaction = (transaction) => {
@@ -24,7 +27,7 @@ function App() {
     setTransactions(transactions.filter((transaction) => transaction.id !== id));
   };
 
-  const filteredTransactions = transactions.fiter((transaction) =>
+  const filteredTransactions = transactions.filter((transaction) =>
     transaction.description.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
