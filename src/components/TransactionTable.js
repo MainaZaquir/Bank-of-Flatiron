@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 
 function TransactionTable({ transactions, deleteTransaction }) {
-    const [sortField, setSortField] = useState(null);
+    const [sortField, ] = useState(null);
 
     let sortedtransactions = [...transactions];
     if (sortField !== null) {
@@ -14,18 +14,14 @@ function TransactionTable({ transactions, deleteTransaction }) {
         <table>
             <thread>
                 <tr>
-
-                    <th onClick={() => setSortField('description')}>
+                    <th >
                         Description
                     </th>
-
-                    <th onClick={() => setSortField('category')}>
+                    <th>
                         Category
                     </th>
-
                     <th>Amount</th>
-                    <th>Actions</th>
-                    
+                    <th>Actions</th>                    
                 </tr>
             </thread>
 
