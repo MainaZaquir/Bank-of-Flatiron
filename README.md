@@ -1,13 +1,13 @@
 # Bank of Flatiron
 
-Bank of Flatiron is a simple web application that allows users to manage their bank transactions.
+Bank of Flatiron is a simple Web Application that allows users to manage their bank transactions.
 
 ## Features
 
 - Displays  a table of all transactions.
-- You acn add a new transaction using the form.
+- You can add a new transaction using the form.
 - You can filer transactions by typing into the search bar.
-- You acn sort transactins alphabetically by category or description.
+- You can sort transactins alphabetically by category or description.
 - You can delete a transaction of your choice.
 
 ## Technologies used
@@ -18,9 +18,9 @@ Bank of Flatiron is a simple web application that allows users to manage their b
 
 ## Setup and Installation
 
-1. Clone teh repositry to your local machine.
+1. Clone the repository to your local machine.
 2. Navigate to the project directory.
-3. Intall teh necessary dependancies with `npm install` (make sure you have npm installed on your machine).
+3. Install the necessary dependancies with `npm install` (make sure you have npm installed on your machine).
 4. Start the development server with `npm start`.
 
 ## Usage
