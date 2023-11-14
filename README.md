@@ -25,7 +25,7 @@ Bank of Flatiron is a simple Web Application that allows users to manage their b
 
 ## Usage
 
-After starting the server, open your web browser and navigate to `http://localhost:3000/transactions` (or whatever port you're using). You should be able to see a table of transactions if there are any. You can add a a new transaction using the form, search for your preffered transaction using the search bar, and delete transactions by clicking teh delete button next to the transaction.
+After starting the server , open your web browser and navigate to `http://localhost:3000/transactions` (or whatever port you're using). You should be able to see a table of transactions if there are any. You can add a a new transaction using the form, search for your preffered transaction using the search bar, and delete transactions by clicking teh delete button next to the transaction.
 
 ## Credits
 
