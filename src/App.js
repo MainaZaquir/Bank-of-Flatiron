@@ -9,7 +9,7 @@ function App() {
   const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:3000/transactions')
+    fetch('https://my-json-server.typicode.com/MainaZaquir/Bank-of-Flatiron/transactions')
       .then((Response) => Response.json())
       .then((data) => {
         console.log(data);
